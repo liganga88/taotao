@@ -1,4 +1,4 @@
-package com.taotao.dao;
+package com.taotao.mapper;
 
 import com.taotao.pojo.TbOrder;
 import com.taotao.pojo.TbOrderQuery;

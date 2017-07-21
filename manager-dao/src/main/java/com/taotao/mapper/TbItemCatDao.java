@@ -1,4 +1,4 @@
-package com.taotao.dao;
+package com.taotao.mapper;
 
 import com.taotao.pojo.TbItemCat;
 import com.taotao.pojo.TbItemCatQuery;

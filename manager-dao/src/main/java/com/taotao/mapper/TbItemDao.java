@@ -1,4 +1,4 @@
-package com.taotao.dao;
+package com.taotao.mapper;
 
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemQuery;
