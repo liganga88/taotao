@@ -1,5 +1,6 @@
 package com.taotao.controller;
 
+import com.taotao.common.pojo.EasyUIDataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.content.service.ContentService;
 import com.taotao.pojo.TbContent;
@@ -20,5 +21,23 @@ public class ContentController {
     @ResponseBody
     public TaotaoResult addContent(TbContent tbContent){
         return contentService.addContent(tbContent);
+    }
+
+    @RequestMapping("/content/query/list")
+    @ResponseBody
+    public EasyUIDataGridResult getContentList(Integer page, Integer rows, Long categoryId){
+        return contentService.getContentList(page, rows, categoryId);
+    }
+
+    @RequestMapping("/rest/content/edit")
+    @ResponseBody
+    public TaotaoResult updateContent(TbContent tbContent){
+        return contentService.updateContent(tbContent);
+    }
+
+    @RequestMapping("/content/delete")
+    @ResponseBody
+    public TaotaoResult deleteContent(String ids){
+        return contentService.deleteContent(ids);
     }
 }
